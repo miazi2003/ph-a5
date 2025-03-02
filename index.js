@@ -70,7 +70,7 @@ for (let i = 0; i <= 5; i++) {
   let completeButton = document.getElementsByClassName("yeasin");
 
   completeButton[i].addEventListener("click", function () {
-    alert();
+    alert("Board Updated successfully");
     const teish = document.getElementById("teish");
     const choy = document.getElementById("choy");
 
@@ -116,5 +116,11 @@ for (let i = 0; i <= 5; i++) {
 document.getElementById('clear-button').addEventListener('click', function(){
   const parent = document.getElementById('notification-div')
 
-  parent.innerHTML = "";
+  parent.innerHTML = ""
+})
+
+// -----------------------------------------------------------------------------------------------------------------------
+
+document.getElementById('go-blog').addEventListener('click' , function(){
+  window.location.href = "./blog.html"
 })
